@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="DayDuration">
+        <item>1d</item>
+        <item>10s</item>
+        <item>5s</item>
+    </string-array>
+
+    <string-array name="Milestone">
+        <item>1000 feet</item>
+        <item>10 feet </item>
+        <item>5 feet</item>
+    </string-array>
+
+    <string-array name="IdleNotificationInterval">
+        <item>1h</item>
+        <item>10s </item>
+        <item>5s</item>
+    </string-array>
+</resources>

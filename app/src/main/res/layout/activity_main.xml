@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textView_stepCounterAvailability"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text=""
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView_stepDetectorAvailability"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text=""
+        app:layout_constraintLeft_toLeftOf="@+id/textView_stepCounterAvailability"
+        app:layout_constraintTop_toTopOf="@+id/textView_stepCounterAvailability" />
+
+    <TextView
+        android:id="@+id/textView_steps"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="32dp"
+        android:layout_marginTop="24dp"
+        android:text="@string/steps"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView_stepDetectorAvailability" />
+
+    <TextView
+        android:id="@+id/textView_stepsNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/distance"
+        app:layout_constraintLeft_toRightOf="@+id/textView_steps"
+        app:layout_constraintBaseline_toBaselineOf="@+id/textView_steps" />
+
+    <TextView
+        android:id="@+id/feet1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/feet"
+        app:layout_constraintLeft_toRightOf="@+id/textView_stepsNumber"
+        app:layout_constraintBaseline_toBaselineOf="@+id/textView_stepsNumber" />
+
+    <Button
+        android:id="@+id/button_resetSteps"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:text="@string/reset_distance"
+        app:layout_constraintBaseline_toBaselineOf="@+id/textView_stepsNumber"
+        app:layout_constraintLeft_toRightOf="@+id/feet1" />
+
+    <TextView
+        android:id="@+id/textView_todaySteps"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/today_s_distance"
+        app:layout_constraintLeft_toLeftOf="@id/textView_steps"
+        app:layout_constraintTop_toBottomOf="@+id/textView_steps" />
+
+    <TextView
+        android:id="@+id/textView_todayStepsNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/distance"
+        app:layout_constraintLeft_toRightOf="@+id/textView_todaySteps"
+        app:layout_constraintBaseline_toBaselineOf="@+id/textView_todaySteps" />
+
+    <TextView
+        android:id="@+id/feet2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/feet"
+        app:layout_constraintLeft_toRightOf="@+id/textView_todayStepsNumber"
+        app:layout_constraintBaseline_toBaselineOf="@+id/textView_todayStepsNumber" />
+
+    <TextView
+        android:id="@+id/textView_settings"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="@string/settings"
+        app:layout_constraintLeft_toLeftOf="@+id/textView_todaySteps"
+        app:layout_constraintTop_toBottomOf="@+id/textView_todaySteps" />
+
+    <TextView
+        android:id="@+id/textView_setDayDuration"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/set_the_duration_of_a_day_to_be"
+        app:layout_constraintLeft_toLeftOf="@id/textView_settings"
+        app:layout_constraintTop_toBottomOf="@+id/textView_settings" />
+
+    <Spinner
+        android:id="@+id/spinner_dayDuration"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="@id/textView_setDayDuration"
+        app:layout_constraintLeft_toRightOf="@id/textView_setDayDuration">
+
+    </Spinner>
+
+    <TextView
+        android:id="@+id/textView_setMileStone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="@string/set_milestone_to_be"
+        app:layout_constraintLeft_toLeftOf="@id/textView_setDayDuration"
+        app:layout_constraintTop_toBottomOf="@id/textView_setDayDuration" />
+
+    <Spinner
+        android:id="@+id/spinner_milestone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="@id/textView_setMileStone"
+        app:layout_constraintLeft_toRightOf="@id/textView_setMileStone">
+
+    </Spinner>
+
+    <TextView
+        android:id="@+id/textView_setIdleNotificationInterval"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="@string/idle_notification_interval_would_be"
+        app:layout_constraintLeft_toLeftOf="@id/textView_setMileStone"
+        app:layout_constraintTop_toBottomOf="@id/textView_setMileStone" />
+
+    <Spinner
+        android:id="@+id/spinner_IdleNotificationInterval"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="@id/textView_setIdleNotificationInterval"
+        app:layout_constraintLeft_toRightOf="@id/textView_setIdleNotificationInterval">
+
+    </Spinner>
+
+    <TextView
+        android:id="@+id/textView_log"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        app:layout_constraintTop_toBottomOf="@+id/textView_setIdleNotificationInterval"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:maxLines="5"
+        android:scrollbars="vertical"
+        android:text="@string/tip"/>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recyclerView_localWalker"
+        android:layout_width="match_parent"
+        android:layout_height="160dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView_log"
+        android:background="@android:color/transparent"
+        android:scrollbars="vertical" />
+
+</android.support.constraint.ConstraintLayout>

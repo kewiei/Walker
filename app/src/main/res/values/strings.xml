@@ -1,0 +1,36 @@
+<resources>
+    <string name="app_name">Walker</string>
+    <string name="step_counter_availability">Step Counter Availability: %1$b</string>
+    <string name="step_detector_availability">Step Detector Availability: %1$b</string>
+    <string name="steps">Total Steps: </string>
+    <string name="reset_distance">Reset distance</string>
+    <string name="today_s_distance">Today\'s distance: </string>
+    <string name="settings">Settings</string>
+    <string name="set_the_duration_of_a_day_to_be">Set the duration of a \'day\' to be:</string>
+    <string name="set_milestone_to_be">Set milestone to be: </string>
+    <string name="idle_notification_interval_would_be">Idle notification interval would be:</string>
+    <string name="tip">The default settings are set to fit for the requirements but you may change the setting to see what would happen when \'time\' flows faster</string>
+    <string name="total_distance">Idle notification interval would be:</string>
+    <string name="feet"> feet</string>
+    <string name="distance">%1$.0f</string>
+    <string name="icon">icon</string>
+    <string name="nobody">nobody</string>
+    <string name="_0feet">0 feet</string>
+    <string name="title_activity_login">Sign in</string>
+    <!-- Strings related to login -->
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password (optional)</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="error_invalid_email">This email address is invalid</string>
+    <string name="error_invalid_password">This password is too short</string>
+    <string name="error_incorrect_password">This password is incorrect</string>
+    <string name="error_field_required">This field is required</string>
+    <string name="permission_rationale">"Contacts permissions are needed for providing email
+        completions."
+    </string>
+    <string name="title_activity_login2">Sign in</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="username_hint">Username: the username is 123</string>
+    <string name="password_hint">Password: the password is 123</string>
+    <string name="sign_in">Sign in</string>
+</resources>
